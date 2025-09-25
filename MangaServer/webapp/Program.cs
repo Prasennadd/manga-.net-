@@ -3,42 +3,45 @@ using Microsoft.Extensions.FileProviders;
 
 var builder = WebApplication.CreateBuilder(args);
 
-// Enable CORS for React
+// Enable CORS (allow all origins for now; change in production)
 builder.Services.AddCors(options =>
 {
     options.AddPolicy("AllowReactApp",
-        policy => policy.WithOrigins("http://localhost:5173", "http://192.168.29.155:5173")
+        policy => policy.AllowAnyOrigin()
                         .AllowAnyHeader()
                         .AllowAnyMethod());
 });
 
 var app = builder.Build();
 
-// Paths for windows
-// string coversPath = @"C:\Mangafiles\Covers";
-// string allMangaPath = @"C:\Mangafiles\allmanga"; // <- new: folder containing all manga chapters
-// string detailsJson = @"C:\Mangafiles\details.json";
-// path for hosting
-string coversPath = Path.Combine(Directory.GetCurrentDirectory(), "Mangafiles", "Covers");
-string allMangaPath = Path.Combine(Directory.GetCurrentDirectory(), "Mangafiles", "allmanga");
-string detailsJson = Path.Combine(Directory.GetCurrentDirectory(), "Mangafiles", "details.json");
+// Relative paths (cloud-friendly)
+string rootPath = Directory.GetCurrentDirectory();
+string coversPath = Path.Combine(rootPath, "Mangafiles", "Covers");
+string allMangaPath = Path.Combine(rootPath, "Mangafiles", "allmanga");
+string detailsJson = Path.Combine(rootPath, "Mangafiles", "details.json");
 
 // Enable CORS
 app.UseCors("AllowReactApp");
 
 // Serve static cover images
-app.UseStaticFiles(new StaticFileOptions
+if (Directory.Exists(coversPath))
 {
-    FileProvider = new PhysicalFileProvider(coversPath),
-    RequestPath = "/covers"
-});
+    app.UseStaticFiles(new StaticFileOptions
+    {
+        FileProvider = new PhysicalFileProvider(coversPath),
+        RequestPath = "/covers"
+    });
+}
 
 // Serve static manga images (chapter pages)
-app.UseStaticFiles(new StaticFileOptions
+if (Directory.Exists(allMangaPath))
 {
-    FileProvider = new PhysicalFileProvider(allMangaPath),
-    RequestPath = "/manga"
-});
+    app.UseStaticFiles(new StaticFileOptions
+    {
+        FileProvider = new PhysicalFileProvider(allMangaPath),
+        RequestPath = "/manga"
+    });
+}
 
 // Root endpoint
 app.MapGet("/", () => "Hello World!");
@@ -46,19 +49,19 @@ app.MapGet("/", () => "Hello World!");
 // Cover service
 var coverService = new CoverService(detailsJson);
 
-/// ðŸ”¹ Get all covers / manga details
+/// Get all covers / manga details
 app.MapGet("/covers", () =>
 {
     return coverService.GetCovers();
 });
 
-/// ðŸ”¹ Get manga names only
+/// Get manga names only
 app.MapGet("/names", () =>
 {
     return coverService.GetCovers().Select(c => c.Name);
 });
 
-/// ðŸ”¹ Get names + URLs (for React)
+/// Get names + URLs (for React)
 app.MapGet("/names-url", () =>
 {
     return coverService.GetCovers().Select(c => new
@@ -68,7 +71,7 @@ app.MapGet("/names-url", () =>
     });
 });
 
-/// ðŸ”¹ Get list of pages for a specific manga chapter
+/// Get list of pages for a specific manga chapter
 app.MapGet("/manga/{mangaName}/{chapterId}/pages", (string mangaName, string chapterId) =>
 {
     var chapterPath = Path.Combine(allMangaPath, mangaName, chapterId);
