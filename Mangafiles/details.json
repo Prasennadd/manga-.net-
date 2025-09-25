@@ -1,0 +1,32 @@
+[
+    {
+        "Id": 1,
+        "Name": "Bluelock",
+        "Url": "/covers/bluelock.jpeg",
+        "Status": "RELEASING",
+        "Totch": 205,
+        "Stdate": 2018,
+        "Genres": "Action, Drama, Sports",
+        "Mainpath": "Z:/Manga/allmanga/bluelock"
+    },
+    {
+        "Id": 2,
+        "Name": "One Piece",
+        "Url": "/covers/onepiece.jpeg",
+        "Status": "RELEASING",
+        "Totch": 1130,
+        "Stdate": 1997,
+        "Genres": "Action, Adventure, Comedy, Fantasy",
+        "Mainpath": "Z:/Manga/allmanga/onepiece"
+    },
+    {
+        "Id": 3,
+        "Name": "Attack on Titan",
+        "Url": "/covers/aot.jpeg",
+        "Status": "FINISHED",
+        "Totch": 230,
+        "Stdate": 2009,
+        "Genres": "Action, Drama, Fantasy, Horror",
+        "Mainpath": "Z:/Manga/allmanga/attackontitains"
+    }
+]

@@ -1,0 +1,54 @@
+Z:\woods\learning .net\webapp\webapp\bin\Debug\net9.0\appsettings.Development.json
+Z:\woods\learning .net\webapp\webapp\bin\Debug\net9.0\appsettings.json
+Z:\woods\learning .net\webapp\webapp\bin\Debug\net9.0\webapp.staticwebassets.endpoints.json
+Z:\woods\learning .net\webapp\webapp\bin\Debug\net9.0\webapp.exe
+Z:\woods\learning .net\webapp\webapp\bin\Debug\net9.0\webapp.deps.json
+Z:\woods\learning .net\webapp\webapp\bin\Debug\net9.0\webapp.runtimeconfig.json
+Z:\woods\learning .net\webapp\webapp\bin\Debug\net9.0\webapp.dll
+Z:\woods\learning .net\webapp\webapp\bin\Debug\net9.0\webapp.pdb
+Z:\woods\learning .net\webapp\webapp\obj\Debug\net9.0\rpswa.dswa.cache.json
+Z:\woods\learning .net\webapp\webapp\obj\Debug\net9.0\webapp.GeneratedMSBuildEditorConfig.editorconfig
+Z:\woods\learning .net\webapp\webapp\obj\Debug\net9.0\webapp.AssemblyInfoInputs.cache
+Z:\woods\learning .net\webapp\webapp\obj\Debug\net9.0\webapp.AssemblyInfo.cs
+Z:\woods\learning .net\webapp\webapp\obj\Debug\net9.0\webapp.csproj.CoreCompileInputs.cache
+Z:\woods\learning .net\webapp\webapp\obj\Debug\net9.0\webapp.MvcApplicationPartsAssemblyInfo.cache
+Z:\woods\learning .net\webapp\webapp\obj\Debug\net9.0\rjimswa.dswa.cache.json
+Z:\woods\learning .net\webapp\webapp\obj\Debug\net9.0\rjsmrazor.dswa.cache.json
+Z:\woods\learning .net\webapp\webapp\obj\Debug\net9.0\rjsmcshtml.dswa.cache.json
+Z:\woods\learning .net\webapp\webapp\obj\Debug\net9.0\scopedcss\bundle\webapp.styles.css
+Z:\woods\learning .net\webapp\webapp\obj\Debug\net9.0\staticwebassets.build.json
+Z:\woods\learning .net\webapp\webapp\obj\Debug\net9.0\staticwebassets.build.json.cache
+Z:\woods\learning .net\webapp\webapp\obj\Debug\net9.0\staticwebassets.development.json
+Z:\woods\learning .net\webapp\webapp\obj\Debug\net9.0\staticwebassets.build.endpoints.json
+Z:\woods\learning .net\webapp\webapp\obj\Debug\net9.0\webapp.dll
+Z:\woods\learning .net\webapp\webapp\obj\Debug\net9.0\refint\webapp.dll
+Z:\woods\learning .net\webapp\webapp\obj\Debug\net9.0\webapp.pdb
+Z:\woods\learning .net\webapp\webapp\obj\Debug\net9.0\webapp.genruntimeconfig.cache
+Z:\woods\learning .net\webapp\webapp\obj\Debug\net9.0\ref\webapp.dll
+C:\MangaServer\webapp\bin\Debug\net9.0\appsettings.Development.json
+C:\MangaServer\webapp\bin\Debug\net9.0\appsettings.json
+C:\MangaServer\webapp\bin\Debug\net9.0\webapp.staticwebassets.endpoints.json
+C:\MangaServer\webapp\bin\Debug\net9.0\webapp.exe
+C:\MangaServer\webapp\bin\Debug\net9.0\webapp.deps.json
+C:\MangaServer\webapp\bin\Debug\net9.0\webapp.runtimeconfig.json
+C:\MangaServer\webapp\bin\Debug\net9.0\webapp.dll
+C:\MangaServer\webapp\bin\Debug\net9.0\webapp.pdb
+C:\MangaServer\webapp\obj\Debug\net9.0\rpswa.dswa.cache.json
+C:\MangaServer\webapp\obj\Debug\net9.0\webapp.GeneratedMSBuildEditorConfig.editorconfig
+C:\MangaServer\webapp\obj\Debug\net9.0\webapp.AssemblyInfoInputs.cache
+C:\MangaServer\webapp\obj\Debug\net9.0\webapp.AssemblyInfo.cs
+C:\MangaServer\webapp\obj\Debug\net9.0\webapp.csproj.CoreCompileInputs.cache
+C:\MangaServer\webapp\obj\Debug\net9.0\webapp.MvcApplicationPartsAssemblyInfo.cache
+C:\MangaServer\webapp\obj\Debug\net9.0\rjimswa.dswa.cache.json
+C:\MangaServer\webapp\obj\Debug\net9.0\rjsmrazor.dswa.cache.json
+C:\MangaServer\webapp\obj\Debug\net9.0\rjsmcshtml.dswa.cache.json
+C:\MangaServer\webapp\obj\Debug\net9.0\scopedcss\bundle\webapp.styles.css
+C:\MangaServer\webapp\obj\Debug\net9.0\staticwebassets.build.json
+C:\MangaServer\webapp\obj\Debug\net9.0\staticwebassets.build.json.cache
+C:\MangaServer\webapp\obj\Debug\net9.0\staticwebassets.development.json
+C:\MangaServer\webapp\obj\Debug\net9.0\staticwebassets.build.endpoints.json
+C:\MangaServer\webapp\obj\Debug\net9.0\webapp.dll
+C:\MangaServer\webapp\obj\Debug\net9.0\refint\webapp.dll
+C:\MangaServer\webapp\obj\Debug\net9.0\webapp.pdb
+C:\MangaServer\webapp\obj\Debug\net9.0\webapp.genruntimeconfig.cache
+C:\MangaServer\webapp\obj\Debug\net9.0\ref\webapp.dll
