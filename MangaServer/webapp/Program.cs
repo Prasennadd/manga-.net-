@@ -14,10 +14,14 @@ builder.Services.AddCors(options =>
 
 var app = builder.Build();
 
-// Paths
-string coversPath = @"C:\Mangafiles\Covers";
-string allMangaPath = @"C:\Mangafiles\allmanga"; // <- new: folder containing all manga chapters
-string detailsJson = @"C:\Mangafiles\details.json";
+// Paths for windows
+// string coversPath = @"C:\Mangafiles\Covers";
+// string allMangaPath = @"C:\Mangafiles\allmanga"; // <- new: folder containing all manga chapters
+// string detailsJson = @"C:\Mangafiles\details.json";
+// path for hosting
+string coversPath = Path.Combine(Directory.GetCurrentDirectory(), "Mangafiles", "Covers");
+string allMangaPath = Path.Combine(Directory.GetCurrentDirectory(), "Mangafiles", "allmanga");
+string detailsJson = Path.Combine(Directory.GetCurrentDirectory(), "Mangafiles", "details.json");
 
 // Enable CORS
 app.UseCors("AllowReactApp");
