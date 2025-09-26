@@ -1,0 +1,11 @@
+services:
+  - type: web
+    name: dotnet-manga
+    env: dotnet
+    rootDir: webapp
+    buildCommand: |
+      dotnet restore
+      dotnet publish -c Release -o out
+      cp -r ../Mangafiles out/Mangafiles
+    startCommand: dotnet out/webapp.dll
+    plan: free
